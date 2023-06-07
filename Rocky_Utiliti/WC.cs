@@ -11,5 +11,8 @@
         public const string CustomerRole = "Customer";
 
         public const string EmailAdmin = "mozglgleb2004@gmail.com";
+
+        public const string CategoryName = "Category";
+        public const string ApplicationTypeName = "ApplicationType";
     }
 }
