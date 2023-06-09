@@ -5,6 +5,11 @@ namespace Rocky_Models
 {
     public class Product
     {
+        public Product()
+        {
+            TempSqFt = 1;
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -30,6 +35,10 @@ namespace Rocky_Models
         public virtual Category Category { get; set; }
 
         [ForeignKey("ApplicationTypeId")]
-        public virtual ApplicationType ApplicationType { get; set; }  
+        public virtual ApplicationType ApplicationType { get; set; }
+
+        [NotMapped]
+        [Range(1, 10000)]
+        public int TempSqFt { get; set; }
     }
 }
